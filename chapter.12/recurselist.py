@@ -24,10 +24,11 @@ def sumList(list,totalSoFar):
     rest = tail(list)
     pp(("sumL recurses with", rest, totalSoFar + first))
     total = sumList(rest, totalSoFar + first)
-    pp(("sumL", list, totalSofar, "returns", total))
+    pp(("sumL", list, totalSoFar, "returns", total))
   return total
 
 def main():
-  pp(("End result:",sumList([16,2,7,5],0)))
+  numbers = [16, 2, 7, 5,]
+  pp(("End result:",sumList(numbers,0)))
 
 main()
